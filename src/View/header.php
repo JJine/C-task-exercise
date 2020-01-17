@@ -47,7 +47,7 @@
                     </li>
                     <li><a href="/entry">출품신청</a></li>
                     <li><a href="/schedule">상영일정</a></li>
-                    <li><a href="#">상영작검색</a></li>
+                    <li><a href="/search">상영작검색</a></li>
                     <li>
                         <a href="#">이벤트</a>
                         <ul class="dropdown">

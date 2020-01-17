@@ -21,6 +21,14 @@ Router::post("/entry", "MovieController@entryProcess");
 
 //Schedule
 Router::get("/schedule", "ScheduleController@schedulePage");
+Router::get("/schedule-add", "ScheduleController@scheduleAddPage");
+Router::post("/schedule-add", "ScheduleController@scheduleAddProcess");
+Router::post("/schedule/get", "ScheduleController@scheduleGetProcess");
+
+//Search
+Router::get("/search", "MovieController@searchPage");
+Router::post("/search", "MovieController@searchProcess");
+
 //User
 Router::get("/join", "UserController@joinPage");
 Router::post("/join", "UserController@joinProcess");
