@@ -26,7 +26,7 @@ class Viewport {
                 // img.dataset.video
                 // `movie${i}.mp4`
                 this.video.src = "./videos/" + e.target.dataset.video;
-               
+                this.videoId = i+1;
             }); 
         });
     }

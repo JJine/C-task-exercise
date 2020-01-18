@@ -125,16 +125,17 @@
         }
 
         dayTemplate(i = "", schedule = null) { //메소드
-                let div =  document.createElement("div");
-                div.classList.add("c-day");
-                div.innerText = i;
+                let a =  document.createElement("a");
+                a.href = `/schedule-detail?date=${this.currentTime.getFullYear()}-${this.currentTime.getMonth() +1}-${i}`;
+                a.classList.add("c-day");
+                a.innerText = i;
 
                 if(schedule !== null) {
-                    let item = document.createElement("div");
+                    let item = document.createElement("span");
                     item.innerText = schedule.title;
-                    div.append(item);
+                    a.append(item);
                 }
-                return div;
+                return a;
         }
         
     }

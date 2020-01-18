@@ -69,4 +69,21 @@ class ScheduleController {
         $data = DB::fetchAll("SELECT E.title, S.* FROM entry AS e, schedules AS S WHERE e.id = S.e_id");
         echo json_encode($data, JSON_UNESCAPED_UNICODE);
     }
+
+    function detailPage() {
+        extract($_GET);
+        if(!isset($_GET['date'])) return back("이 페이지는 없는 페이지 입니다."); //a href="date?= 부분 
+        if($date !== date("Y-m-d", strtotime($date)) && $date !== date("Y-n-j", strtotime($date))) return back("이 페이지는 없는 페이지 입니다."); //n 0안붙는 포멧 ^-^
+        $tomorrow = date("Y-m-d", strtotime($date) + 3600 * 24); //strtotime 초 단위를 반환시켜준다. 그러면 그것을 더해주면 된다. 그럼 다음날이 나온다.
+
+
+        $entry_user = "SELECT E.*, U.user_id, U.user_name FROM entry AS E, users AS U WHERE E.u_id = U.id";
+        $sql = "SELECT E.*, S.start_time, S.end_time FROM ($entry_user) AS E LEFT JOIN schedules AS S ON S.e_id = E.id WHERE TIMESTAMP(?) <= start_time AND start_time < TIMESTAMP(?)"; //그냥 $entry_user쓰면 sql문법에 어긋난다.
+        //TIMESTAMP(); 자료형으로 바꿔준다. 오늘과 다음날 이전까지 구할 수 있다.
+        $data = DB::fetchAll($sql, [$date, $tomorrow]); 
+
+        view("detail", ["movies" => $data, "date"=> $date]);
+    }
+
+   
 }

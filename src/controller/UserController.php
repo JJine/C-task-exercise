@@ -16,7 +16,7 @@ class UserController {
         //비밀번호 8자리 이상
         //이름 4글자 이하
         
-        if(!preg_match("/^[a-zA-Z0-9]+$/", $user_id) || preg_match("/^[0-9]+$/", $user_id)) ///^?=.*[a-zA-z])(
+        if(!preg_match("/^[a-zA-Z0-9]+$/", $user_id) || preg_match("/^[0-9]+$/", $user_id)||preg_match("/[^@]+@[a-z]+\.[a-z]{2,4}/", $user_id)) ///^?=.*[a-zA-z])(
             return back("아이디는 영문 숫자조합이어야 합니다.");
         if(!preg_match("/^.{8,}$/", $password)) // mb_strlen() 굳이 preg_match 안 써도 됨 if(mb_strlen($user_id) < 8) 
             return back("비밀번호 8자리여야합니다.");

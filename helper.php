@@ -28,3 +28,8 @@ function go($url, $message = "") {
     echo "</script>";
     exit;
 }
+
+function movieName($mid) {
+    $movieList = ["기생충", "극한직업", "롱오브더킹", "나랏말싸미", "봉오동전투"];
+    return $movieList[$mid-1];
+}

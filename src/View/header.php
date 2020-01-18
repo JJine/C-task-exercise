@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./A Module/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./A Module/fontawesome/css/all.css">
     <link rel="stylesheet" href="./A Module/css/style.css">
-    <link rel="stylesheet" href="./B Module/style.css">
+  
+
     <title>부산국제영화제</title>
 </head>
 <body>
@@ -51,8 +52,8 @@
                     <li>
                         <a href="#">이벤트</a>
                         <ul class="dropdown">
-                            <li><a href="#">영화티저 콘테스트</a></li>
-                            <li><a href="./parti.html">콘테스트 참여하기</a></li>
+                            <li><a href="/contest">영화티저 콘테스트</a></li>
+                            <li><a href="/parti">콘테스트 참여하기</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -24,10 +24,19 @@ Router::get("/schedule", "ScheduleController@schedulePage");
 Router::get("/schedule-add", "ScheduleController@scheduleAddPage");
 Router::post("/schedule-add", "ScheduleController@scheduleAddProcess");
 Router::post("/schedule/get", "ScheduleController@scheduleGetProcess");
+Router::get("/schedule-detail", "ScheduleController@detailPage");
 
 //Search
 Router::get("/search", "MovieController@searchPage");
 Router::post("/search", "MovieController@searchProcess");
+
+//Event
+Router::get("/parti", "MovieController@partiPage");
+Router::post("/parti", "MovieController@partiProcess");
+
+Router::get("/contest", "MovieController@contestPage");
+Router::get("/contest-info", "MovieController@contestInfoPage");
+Router::post("/contest-info", "MovieController@contestInfoProcess");
 
 //User
 Router::get("/join", "UserController@joinPage");

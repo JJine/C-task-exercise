@@ -32,8 +32,6 @@ class App {
 
         this.track = null;
         this.selectTool = null;
-
-        this.download();
     }
 
     // set active(tool) {
@@ -70,7 +68,7 @@ class App {
         });
 
         document.querySelector("#down-btn").addEventListener("click", ()=> {
-            if(document.querySelector("video").getAttribute("src") == null) {alert("비디오를 선택해주세요!"); return false;} this.download();
+            if(document.querySelector("video").getAttribute("src") == null) {alert("비디오를 선택해주세요!"); return false;}  this.download();
         });
 
 
@@ -96,15 +94,49 @@ class App {
     // }
 
     download() {
-        
+        let html = this.parseHTML();
+        //HTML 문자열을 만든다.
+        //만든 문자열로 Blob 객체를 생성한다. (json) 랑 비슷하지만 이미지나 다른 것을 구현
+        let blob = new Blob([html], {type:"text/html"});
+
+        //a 태그를 만들어서 blob 객체와 연결된 URL을 href 에 넣는다.
+        let a = document.createElement("a");
+        a.href = URL.createObjectURL(blob); //blob 객체를 이용해서 url 생성 => a.href에 연결
+
+        // a태그에 download 속성을 설정해서 클릭하면 href의 데이터를 다운 받게 한다. 이름 - > download함
+        a.download = "movie.html"; //과제에서는 날짜 입력
+
+        // a 태그를 추가하고 강제로 클릭하게 한다. 
+        document.body.append(a);
+        a.click();
+
+        // a 태그 삭제    
+        a.remove();
+        console.log(1);
     }    
+
+    parseHTML() {
+        let html = `<div>
+                        <div id="viewport" style="position:absolute; left : 0; top : 0, width: 100%, height: 100%; overflow: hidden; background: #ddd;">
+                            <video src="${this.viewport.video.src}"></video>
+                            <div id="12323"></div>
+                        </div>
+                    </div>`;
+
+        return html;
+    }
 }
 // window.addEventListener("load", ()=>{  
 //     let app = new App();
 // });
 
+/**
+ * C과제에서 app을 이용해 html 문자열을 받아야하기 때문에
+ * window property로 할당하여 어떤 스크립트 코드에서 사용해야한다.
+ */
+
 window.onload = () => {
-    const app = new App();
-    app.addEvent();
+    window.app = new App();
+    window.app.addEvent();
 }
 
