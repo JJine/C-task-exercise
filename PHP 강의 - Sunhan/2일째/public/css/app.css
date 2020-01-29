@@ -1,0 +1,26 @@
+html {
+    height:100vh;
+}
+
+#container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+footer {
+    grid-row:3/4;
+    height:50px;
+}
+
+.out {
+    opacity: 1;
+    transform-origin: top center;
+    transform: scaleY(1);
+    transition: all 0.5s;
+}
+
+.out.fade-out {
+    transform: scaleY(0);
+    opacity: 0;
+}
