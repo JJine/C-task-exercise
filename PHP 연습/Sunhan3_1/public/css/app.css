@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+}
+html {
+    height:100vh;
+    scroll-behavior: smooth;
+}
+
+a, li {
+    text-decoration: none;
+}
+
+.logo {
+    list-style: none;
+    
+    margin-left: 48px;
+}
+
+#mainNav ul{
+    display: inline-flex;
+    margin: 50px;
+}
+
+#mainNav li {
+    list-style: none;
+    margin: 0 20px;
+    color: #b2b1b1;
+    cursor: pointer;
+}
+
+#container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: #42455a;
+}
+
+.signup_btn {
+    top : 50px;
+    right: 310px;
+    position: absolute;
+    color : #fff;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left,  #ffd86f, #fc6262);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: 0.5s;
+}
+
+.signup_btn:hover {
+    background-image:  radial-gradient(circle at top left,  #ffd86f, #fc6262), radial-gradient(circle at top left,  #ffd86f, #fc6262); 
+    color : rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.login_btn {
+    top : 50px;
+    right: 200px;
+    position: absolute;
+    text-decoration: none;
+    color : #fff;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left,  #ffd86f, #fc6262) ;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.login_btn:hover {
+    background-image:  radial-gradient(circle at top left,  #ffd86f, #fc6262), radial-gradient(circle at top left,  #ffd86f, #fc6262); 
+    color : rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.name_btn {
+    width: 100px;
+    top : 50px;
+    right: 310px;
+    position: absolute;
+    text-decoration: none;
+    color : #fff;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#fff, #fff), radial-gradient(circle at top left,  #ffd86f, #fc6262) ;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.logout_btn {
+    top : 50px;
+    right: 200px;
+    position: absolute;
+    text-decoration: none;
+    color : #fff;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left,  #ffd86f, #fc6262) ;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.logout_btn:hover {
+    background-image:  radial-gradient(circle at top left,  #ffd86f, #fc6262), radial-gradient(circle at top left,  #ffd86f, #fc6262); 
+    color : rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.signup_btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.name_btn span .w {
+    display: inline-block;
+    padding: 8px 5px;
+    font-weight: bold;
+    color: #FFC0CB;
+}
+
+.name_btn span .w2 {
+    display: inline-block;
+    color: #fff ;
+}
+
+.login_btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.logout_btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+}
+
+.text {
+    width: 50%;
+    float: left;
+}
+
+.text h1 {
+    font-size: 43px;
+    width: 800px;
+    position: relative;
+    margin-left: 40px;
+}
+
+.read {
+    height: 50px;
+    width: 150px;
+    border: 3px solid transparent;
+    border-radius: 160px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left,  #ffd86f, #fc6262) ;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+}
+
+
+.read:hover {
+    /* background-image: radial-gradient(circle at top left,  #ffd86f, #fc6262); */
+    /* height: 50px;
+    width: 150px;
+    border: 3px solid transparent;
+    border-radius: 160px; */
+    background-image:  radial-gradient(circle at top left,  #ffd86f, #fc6262), radial-gradient(circle at top left,  #ffd86f, #fc6262); 
+    /* background-origin: border-box;
+    background-clip: content-box, border-box; */
+    color : rgb(0, 0, 0);
+}
+b{
+    display: block;
+    padding: 12px 22px;
+    text-align: center;
+    font-size : 12px;
+    
+}
+
+.picture {
+    width: 50%;
+    float: right;
+}
+
+.picture img {
+    width: 100%;
+    margin-top: -20px;
+    padding-left: 50px;
+}
+
+
+.text p {
+    font-size: 15px;
+    width: 650px;
+    margin: 30px 0 30px 0;
+    line-height: 25px;
+    color: #919191;
+}
+
+footer {
+    grid-row:3/4;
+    height:50px;
+}
+
+.out {
+    opacity: 1;
+    transform-origin: top center;
+    transform:scaleY(1);
+    transition:all 0.5s;
+}
+
+.out.fade-out {
+    transform:scaleY(0);
+    opacity: 0;
+}
+
+#gridContainer {
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows:150px;
+    width:920px;
+}
+
+.todobox {
+    box-shadow: 0 0 5px rgba(0,0,0, 0.3);
+    border-radius: 80px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    transform-origin: center top;
+    transform: scaleY(0.1);
+    transition: all 0.5s;
+}
+
+.todobox.active {
+    transform: scaleY(1);
+}
+.todobox:hover .trans-box {
+    opacity: 0;
+}
+
+.todobox > .header-box {
+    display:flex;
+    justify-content: center;
+    font-weight: 700;
+    color:#555;
+    position: relative;
+}
+
+/* .todobox .trans-box {
+    position: absolute;
+    opacity: 1;
+    width:100%;
+    height:100px;
+    transform: rotateZ(-45deg);
+    transition: all 0.5s;
+    background-color: rgba(30,144, 255, 1);
+} */
+
+.trans-box.head {
+    left:-190px;
+    top:0;
+}
+
+.trans-box.tail {
+    right:-180px;
+    bottom:-120px;
+}
+
+.todobox > .info-box {
+    display: flex;
+    justify-content: center;
+}
+
+.todobox > .info-box > .time {
+    display: grid;
+    grid-gap:20px;
+    width:80%;
+    grid-template-columns: 1fr 5fr;
+    font-size: 15px;
+}
+.todobox .icon-box {
+    font-size:20px;
+    color:#666;
+    font-weight: 800;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.todobox .text-box {
+    display:flex;
+    align-items: center;
+}
+
+.todobox > .button-row {
+    text-align: left;
+}
+
+.todobox > div {
+    padding:0.3rem 0.75rem;
+}
+
+.icon-btn {
+    background-color: #FFC0CB;
+    color:#fff;
+    font-size:20px;
+    padding:0.6rem 0.9rem;
+    border:none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: all 0.5s;
+}
+
+.icon-btn:hover {
+    background-color: #FFC0CB;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width : 100%;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+/* #gray {
+    position : absolute;
+    top: 0;
+    left : 100%;
+} */
+
+img {
+  
+}
+
+h1 {
+    text-align: center;
+}
+
+#toast {
+    position : fixed;
+    bottom : 30px;
+    left : 50%;
+    padding : 15px 20px;
+    transform: translate(-50%, 10px);
+    border-radius: 30px;
+    overflow: hidden;
+    font-size: .8rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s visibility .5s transform .5s;
+    background-color: rgba(0,0,0, 0.35);
+    color: #fff;
+    z-index : 10000; 
+}
+
+#toast.reveal {
+    opacity : 1;
+    visibility : visible;
+    transform: translate(-50%, 0);
+}
+
