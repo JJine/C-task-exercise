@@ -5,7 +5,7 @@ window.onload = function() {
 
     document.getElementById("form-sign").addEventListener('click', ()=> {
         x.style.left = "-600px";
-        y.style.left = "60px";
+        y.style.left = "50px";
         z.style.left = "110px";
     });
 
