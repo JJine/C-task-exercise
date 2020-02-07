@@ -37,3 +37,4 @@ class DB {
         return self::getDB()->lastInsertId();
     }
 }
+
