@@ -1,0 +1,128 @@
+.main-container {
+    color: #000;
+    /* overflow: hidden; */
+    /* background: #f8f9fb; */
+    /* width: 100%; */
+    /* height: 100% !important; */
+    /* z-index: -4; */
+    /* margin: 0 auto;
+    padding: 0; */
+    display: block;
+}
+
+.content-wrapper {
+    position: relative;
+    top: 100px;
+    left: 0;
+    /* overflow: hidden;     */
+}
+.content-bg {
+    position: absolute;
+    top: 0;
+    padding: 40px 60px;
+    margin-left: 300px;
+    background: #f8f9fb;
+}
+
+.content-bg h1 {
+    margin: 150px 0 60px 20px;
+}
+
+/* .plus {
+    position: relative;
+    border-radius: 60px;
+    background: #fff;
+    border: 1px solid #000;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -30px;
+    z-index: 500px;
+} */
+.content-box {
+    position: relative;
+}
+
+.content-box li {
+    width: auto;
+    float: left;
+    height: auto;
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.box-type {
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    display: block;
+    position: relative;
+    text-align: none;
+    /* border: 1px solid transparent; */
+    border-radius: 20px;
+    transition: all ease 0.5s;
+    /* box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.05); */
+    box-shadow:  -10px 100px 100px -100px rgba(0,0,0,0.3);
+    font-weight: normal;
+    padding-top: 70px;    
+    padding-left: 20px;
+}
+
+.com-date {
+    display: inline-block;
+}
+
+.com-view {
+    display: inline-block;
+}
+
+.com-view p, .com-date p {
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.com-category {
+    top: 50px;
+    width: 300px;
+    height: 140px;
+}
+
+.box-type p {
+    color: rgb(126, 126, 126);
+}
+
+.box-type:hover {
+    transform: scale(1.2);
+}
+
+.com-title  {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.com-text {
+    display: block;
+
+}
+
+.box-type span{
+    color: #000;
+}
+
+.com-img {
+    width: 100%;
+    height: 250px;
+    background: #000;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.button-row {
+    text-align: center;
+    border: 0;
+    outline: none;
+}

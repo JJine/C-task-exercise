@@ -1,0 +1,268 @@
+.read-wrapper {
+    /* position: relative; */
+   overflow: hidden;
+}
+
+.post-container {
+    padding: 0;
+    max-width: 1300px;
+    margin-top: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-lefT: auto;
+}
+
+.post-header {
+	margin-top: 140px;
+	width: 700px;
+    display: block;
+    background: #fff;
+    /* margin: 4% auto; */
+    border-bottom: 1px solid #eee;
+}
+
+.post-category {
+
+    font-weight: bold;
+    font-size: 16px;
+    color: #ddd;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.post-text {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.body {
+    flex: 1;
+}
+
+.nickname {
+	font-weight: 600;
+	margin-right: 10px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.text-tru {
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fa-comments {
+    color : rgb(136, 136, 136);
+    margin-left: 20px;
+}
+
+.com {
+    color: rgb(136, 136, 136);
+}
+
+.text-content {
+	margin-top: 20px;
+}
+
+.item-post {
+	margin-bottom: 10px;
+}
+
+.date {
+    margin-right: 20px;
+    color: rgb(136, 136, 136);
+    font-weight: bold;
+}
+
+.view {
+    color: rgb(136, 136, 136);
+    font-weight: bold;
+}
+
+/* 댓글 */
+.reply_view {
+	border-top: 1px solid #eee;
+	width:700px;
+	margin-top:100px; 
+	word-break:break-all;
+}
+
+.reply_view h3 {
+	margin: 20px 0 20px 0;
+}
+
+.dap_lo {
+	margin-top: 10px;
+	width: 100%;
+	font-size: 14px;
+	padding:10px 0 15px 0;
+}
+
+.form-reply {
+	border: 1px solid #ddd;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+
+.dap_to {
+	margin-top:5px;
+}
+
+.rep_me {
+    font-size:12px;
+}
+
+.rep_me ul li {
+	float:left;
+	width: 30px;
+}
+
+.dat_delete {
+	display: none;
+}	
+
+.dat_edit {
+	display:none;
+}
+
+.dap_sm {
+	position: absolute;
+	top: 10px;
+}
+
+.dap_edit_t{
+	width:520px;
+	height:70px;
+	position: absolute;
+	top: 40px;
+}
+
+.re_mo_bt {
+	position: absolute;
+	top:40px;
+	right: 5px;
+	width: 90px;
+	height: 72px;
+}
+
+#re_content {
+	width:700px;
+	height: 56px;
+	border: 1px solid #ddd;
+	outline: none;
+	resize: none;
+	border-radius: 5px;
+}
+
+.dap_ins {
+	width: 700px;
+	margin-top:50px;
+}
+
+.reply_view h3 {
+	margin-top: 100px;
+}
+
+.dap_ins > input {
+	height: 25px;
+	border: 1px solid #ddd;
+	outline: none;
+	border-radius: 20px;
+}
+
+.dap_ins > textarea {
+	border: 1px solid #ddd;
+	outline: none;
+	border-radius: 20px;
+
+}
+
+.re_bt {
+	position: absolute;
+	width:100px;
+	height:56px;
+	font-size:16px;
+	margin-left: 603px; 
+	outline: none;
+	border: 0;
+}
+
+#frn_cre {
+	display: none;
+	width:400px;
+	height: 250px;
+	background: white;
+	border:solid 2px #E6E6E6;
+	position: absolute;
+	left: 150px;
+	top:70px;
+	z-index: 20;
+}
+
+#frn_t {
+	position: relative;
+	top:10px; 
+	left: 10px;
+	font-size: 14px;
+	font-weight: bold ;
+}
+
+#frn_st {
+	position: relative;
+	top:20px; 
+	left: 10px;
+	font-size: 13px;
+}
+
+.frn-table{
+	margin-left:10px; margin-top:40px;
+}
+
+.frn-table thead th{
+	height:30px;
+	border-top:1px solid #6E6E6E;
+	border-bottom:1px solid #6E6E6E;
+	background:#E6E6E6;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.frn-table tbody td{
+	padding:10px 0;
+	height:20px;
+	font-size: 14px;
+}
+
+#frn_bt {
+	position: relative;
+	margin-left:0px;
+	margin-top:20px;
+	font-size:14px;
+}
+
+#frn_bt button {
+	border:solid 1px #BDBDBD;
+	padding: 5px 10px 5px 10px;
+	margin-left: 15px; 
+	background:white;
+}
+
+#frn_bt button:hover {
+	background:#E6E6E6;
+}
+
